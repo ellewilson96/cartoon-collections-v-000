@@ -18,11 +18,12 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(array)
+
   cheese_types = ["cheddar", "gouda", "camembert"]
     array.keep_if{|v| v == "#{cheese_types}"}
-    if v > 0
+    if array.length > 0
       return array
-    else v == 0
+    else array.length == 0
         nil
 end
 end
