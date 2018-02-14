@@ -19,6 +19,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-     array.select { |v| v.include?("#{cheese_types}") == true}
+    if array.select { |v| v.include?("#{cheese_types}") == true}
      return array.first
+   else
+     nil
 end
