@@ -20,5 +20,9 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
     array.keep_if{|v| v == "#{cheese_types}"}
-    return
+    if v > 0
+      return array
+    else v == 0
+        nil
+end
 end
