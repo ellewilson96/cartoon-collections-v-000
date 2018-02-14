@@ -23,6 +23,6 @@ def find_the_cheese(array)
       array.include?(cheese_types)
       return cheese_types.first(array)
     else
-      nil
+      
 end
 end
